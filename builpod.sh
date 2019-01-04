@@ -31,7 +31,8 @@ git push origin $CURRENT_POD_VERSION
 
 # 发布 Pod
 echo "publish repo $PROJECT_NAME"
-pod repo push CSMBPSpecs $PROJECT_NAME.podspec --verbose --use-libraries --allow-warnings
+#指定要推送的Repo仓库
+pod repo push GGSpecs $PROJECT_NAME.podspec --verbose --use-libraries --allow-warnings
 
 ret=$?
 
